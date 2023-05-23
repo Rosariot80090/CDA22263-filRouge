@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><title>nCode | Fil Rouge CDA - Travail à réaliser</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/font-awesome.min.css">
+        <link rel="stylesheet" href="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/bootstrap.min.css">
+        <link rel="stylesheet" href="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/darcula.css">
+        <!-- <link rel="stylesheet" href="/css/highlight/line-number.css"> -->
+        <link rel="stylesheet" href="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/github-markdown.css">
+        <!-- <link rel="stylesheet" href="/css/markdown_foad.css"> -->
+        <link rel="stylesheet" href="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/menu-markdown.css">
+        <!-- <script src="/js/highlightjs-line-numbers.min.js"></script> -->
+        <script src="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/jquery-3.4.1.min.js"></script>
+        <script src="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/popper.min.js"></script>
+        <script src="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/bootstrap.min.js"></script>
+        <script src="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/highlight.js"></script>
+        </head><body><div class="container"><div class="markdown-body"><h1 id="1">Fil Rouge CDA - Travail à réaliser</h1>
+<p>Pour développer son système de vente, l'entreprise souhaiterait 
+mettre en place un site web (e-commerce) accessible aux particuliers et 
+aux professionnels. Cette solution doit offrir les services suivants:</p>
+<ul>
+<li>
+<p>Front-Office (partie publique du site)</p>
+<ul>
+<li>Consultation du catalogue / Ajout des produits dans le panier</li>
+<li>Inscription d'un nouvel utilisateur sur le site (pour les particuliers)</li>
+<li>Connexion/Deconnexion d'un utilisateur pour accéder à son profil</li>
+<li>Validation du panier pour créer une nouvelle commande</li>
+</ul>
+</li>
+<li>
+<p>Back-Office (réservé à l'administrateur)</p>
+<ul>
+<li>Ajout/Suppression de produit dans le catalogue</li>
+<li>Visualisation des commandes</li>
+</ul>
+</li>
+</ul>
+<!-- La liste de produits doit s'afficher avec un système de pagination. -->
+<p>Vous devez prévoir un module de recherche de produits.</p>
+<p>Le site doit bien évidement être lisible sur les principaux navigateurs et il doit s'adapter aux navigateurs mobiles.</p>
+<h2 id="6">Construire la maquette de l’application</h2>
+<p>Avec un outil de maquettage (mockflow.com ou Figma <a href="https://youtu.be/KEQoXvnwR40">tuto video</a>), réalisez la maquette de l’application Web. Cette maquette doit comporter :</p>
+<ul>
+<li>La fenêtre de démarrage de l’application affichant la liste des catégories</li>
+<li>Une page affichant la liste des sous catégories d'une catégorie</li>
+<li>Une page affichant la liste des produits d'une sous catégorie</li>
+<li>Une page affichant les détails d'un produit</li>
+<li>Une page permettant d'ajouter un produit au panier</li>
+<li>Une page affichant le contenu du panier</li>
+<li>Une page d'inscription</li>
+<li>Une page permettant de se connecter</li>
+<li>Un page de changement de mot de passe</li>
+</ul>
+<p>Représentez le graphe de navigation de votre application. </p>
+<p>Ce graphe doit mettre en évidence les différents écrans de votre 
+application ainsi que les liens permettant de passer d’un écran à un 
+autre.</p>
+<p>Vous pouvez vous inspirer de <a target="_blank" href="https://ncode.amorce.org/ressources/Pool/CDA/Fil_rouge/maquette_page1.png">cet exemple</a>.</p>
+<p>Pour l'application Desktop, la maquette doit comporter:</p>
+<ul>
+<li>L'écran d'accueil incluant le menu</li>
+<li>Une interface permettant de naviguer dans la catalogue (Catégorie/Sous catégorie)</li>
+<li>Une interface permettant de gérer le CRUD sur le catalogue</li>
+<li>Une interface permettant de sélectionner un client et d'afficher les commandes</li>
+<li>Le tableau de bord</li>
+</ul>
+<p>Pour l'application Mobile, la maquette doit comporter:</p>
+<ul>
+<li>L'écran de démarrage de l'application</li>
+<li>Une page affichant la liste des sous catégories d'une catégorie</li>
+<li>Une page affichant la liste des produits d'une sous catégorie</li>
+</ul>
+<h2 id="16">Développer des pages web statiques (HTML/CSS)</h2>
+<p>Réaliser un page d'accueil pour votre projet. Vous devez réaliser 
+l’intégration HTML/CSS de votre page d’accueil à partir des éléments de 
+la charte graphique.</p>
+<p>Le site est divisé en deux parties.</p>
+<ul>
+<li>
+<p>Font Office : contient la partie publique du site (dont la page 
+d’accueil) et un accès à la liste de produits et accès au formulaire 
+d’inscription. Vous devez intégrer au mieux les éléments de la charte 
+graphique.</p>
+</li>
+<li>
+<p>Back Office : c’est la partie privée du site, réservée à l’administrateur, elle permet de gérer les produits, les commandes …</p>
+</li>
+</ul>
+<p>Reprenez les différents écrans de votre maquette et réalisez 
+l'intégration HTML/CSS. Le résultat de votre travail doit comporter au 
+moins:</p>
+<ul>
+<li>La fenêtre de démarrage de l’application affichant la liste des catégories</li>
+<li>Une page affichant la liste des sous catégories d'une catégorie</li>
+<li>Une page affichant la liste des produits d'une sous catégorie</li>
+<li>Une page affichant les détails d'un produit</li>
+<li>Une page affichant le contenu du panier</li>
+<li>Une page d'inscription</li>
+<li>Une page permettant de se connecter</li>
+</ul>
+<h2 id="22">Intégrer des scripts clients (Javascript)</h2>
+<p>Votre application WEB doit comporter un formulaire d’inscription pour le client.</p>
+<p>Vous devez empêcher l'utilisateur d'envoyer des informations erronées et lui indiquer les erreurs.</p>
+<h2 id="25">Développer des composants web d’accès aux données</h2>
+<p><strong><em>Pour la partie Front Office:</em></strong></p>
+<p>Votre site doit permettre à l'utilisateur de créer une commande 
+(ajout des produits au panier, inscription, connexion, validation du 
+panier et enregistrement de la commande)</p>
+<p><strong><em>Pour la partie Back Office:</em></strong></p>
+<p>Vous devez mettre en œuvre la gestion CRUD sur la table produit. Ces 
+pages devront être accessibles à partir de votre menu d'accueil.</p>
+<p>Votre interface doit permettre d’afficher la liste des éléments, l’ajout, la modification et la suppression.</p>
+<blockquote>
+<p>Vous devez utiliser une architecture MVC pour réaliser l'ensemble de ce travail.</p>
+</blockquote>
+<h3 id="32">Publier l’application</h3>
+<p>Publier le résultat de votre travail sur l’espace de publication qui 
+vous a été attribué. Le site publié doit s’exécuter sans erreur.</p>
+<h2 id="34">Application Desktop</h2>
+<p>Pour son usage interne, l'entreprise souhaite s'équiper d'un logiciel
+ de gestion commerciale. Ce logiciel sera déployé sur les postes 
+informatiques de l'entreprise</p>
+<!-- 1. Un module de gestion des commandes réservé au service commercial : 
+ * Créer une nouvelle commande
+ * Ajouter des produits dans la commande
+ * Connaître l’état de la commande (saisie, annulée, en préparation, expédiée, facturée, retard de paiement, soldée)
+ * Consulter les clients en retard de paiement à une date donnée
+ * Modifier ou annuler la commande avant qu’elle ne soit en préparation -->
+<ol>
+<li>
+<p>Un module de gestion des produits réservé au service de gestion des produits doit permettre :</p>
+<ul>
+<li>D’ajouter des produits</li>
+<li>D’en supprimer</li>
+<li>D’en modifier les caractéristiques (libellé, caractéristique, tarif)
+<!-- * De modifier l'arborescence des catégories --></li>
+</ul>
+</li>
+<li>
+<p>Un tableau de bord de gestion permettra d'afficher des indicateurs de performance</p>
+<ul>
+<li>Chiffre d'affaires mois par mois pour une année sélectionnée</li>
+<li>Chiffre d'affaires généré pour un fournisseur
+<!-- * TOP 10 des produits les plus commandés pour une année sélectionnée (référence et nom du produit, quantité commandée, fournisseur)</li>
+<li>TOP 10 des produits les plus rémunérateurs pour une année sélectionnée (référence et nom du produit, marge, fournisseur)</li>
+<li>Top 10 des clients en nombre de commandes ou chiffre d'affaires</li>
+<li>Répartition du chiffre d'affaires par type de client --&gt;</li>
+<li>Nombre de commandes en cours de livraison.</li>
+</ul>
+</li>
+</ol>
+<p>À partir de la maquette réalisée précédemment, concevez (au minimum) :</p>
+<ul>
+<li>L'écran d'accueil
+<!-- - L'interface permettant de sélectionner un client est d'afficher la liste des commandes. --></li>
+<li>L'interface permettant de gérer le CRUD sur la table des produits.</li>
+<li>L'interface permettant d'afficher le tableau de bord.</li>
+</ul>
+<p>Les zones saisies doivent être contrôlées et les erreurs de saisie gérées.</p>
+<!-- En utilisant le pattern DAO, créez des composants d’accès aux données vous permettant de fournir des données à vos formulaires.
+Une première version utilisera une couche d'accès aux données JDBC -->
+<p>Votre application se connectera sur votre base de données via une API.</p>
+<!-- TOTO: à revoir !!! avec l'api -->
+<!-- Votre couche d'accès aux données doit être testée par le framework de tests unitaires. --></li></ol></div><div class="menu-markdown"><img src="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/menu.png"><div data-id="1" class="titre">Fil Rouge CDA - Travail à réaliser</div><div data-id="6">Construire la maquette de l’application</div><div data-id="16">Développer des pages web statiques (HTML/CSS)</div><div data-id="22">Intégrer des scripts clients (Javascript)</div><div data-id="25">Développer des composants web d’accès aux données</div><div data-id="32">&nbsp;&nbsp;&nbsp;&nbsp;Publier l’application</div><div data-id="34">Application Desktop</div></div></div><script>hljs.initHighlightingOnLoad();//hljs.initLineNumbersOnLoad();</script><script src="nCode%20Fil%20Rouge%20CDA%20-%20Travail%20%C3%A0%20r%C3%A9aliser_fichiers/menu-markdown.js"></script><script>document.title = "nCode | " + document.querySelector("h1").textContent;</script></body></html>
